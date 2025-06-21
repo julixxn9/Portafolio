@@ -1,0 +1,239 @@
+.home-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #f0f0f0;
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+}
+
+.home-container .card {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.home-container .card .texto {
+    width: 48%;
+    min-width: 280px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home-container .card .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-container .card .info .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    max-width: 320px;
+    min-width: 200px;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.home-container .card .info span {
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #d4af37;
+}
+
+.home-container .card .info h2 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.home-container .card .info .btn-separador {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.home-container .card .info .btn-separador button {
+    width: 15rem;
+    max-width: 30rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    border: none;
+    background-color: #444;
+    color: #ffe000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-container .card .info .btn-separador button:hover {
+    background-color: #ffe000;
+    color: #000;
+}
+
+.home-container .card .info .btn-separador button:nth-child(2) {
+    background-color: #ffe000;
+    color: #000;
+}
+
+.info .texto .developer {
+  font-size: 1rem;
+  /* font-family: monospace; */
+  position: relative;
+  color: #ffe000;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.info .texto .developer::after {
+  content: "";
+  position: absolute;
+  right: -1.3rem;
+  background: linear-gradient(135deg, #222222, #282727);
+  width: 100%;
+  height: 100%;
+  border-left: 0.1rem solid black;
+  animation: titulado 0.3s linear infinite, tipeo 4s steps(29) infinite alternate, tipeoMobile 4s steps(29) infinite alternate;
+}
+
+
+.home-container .card .info .image > img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(255, 224, 0, 0.4);
+}
+
+.home-container .card .social {
+  display: flex;
+  align-items: end;
+}
+
+.home-container .card .social ul {
+  display: flex;
+  flex-direction: column ;
+  gap: 1rem;
+}
+
+@keyframes tipeo {
+  from {
+    width: 103%;
+  }
+  to {
+    width: 42%;
+  }
+}
+
+@keyframes titulado {
+  0% {
+    border-left: 0.1rem solid black;
+  }
+  1% {
+    border-left: 0.1rem solid transparent;
+  }
+  50% {
+    border-left: 0.1rem solid transparent;
+  }
+  51% {
+    border-left: 0.1rem solid black;
+  }
+}
+
+@keyframes tipeoMobile {
+  from {
+    width: 110%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .home-container .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .home-container .card .info {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .home-container .card .texto {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-container .card .texto > p {
+    display: none; /* Se oculta el resumen en mobile para reducir ruido */
+  }
+
+  .home-container .card .texto .developer {
+    font-size: 1rem;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+  }
+/* 
+  .home-container .card .texto .developer::after {
+      Evita que la animación de tipeo corte la pantalla 
+     
+    } */
+     .home-container .card .texto h2 {
+    font-size: 2rem;
+    color: #ffe000;
+  }
+  
+  .home-container .card .info .image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .home-container .card .info .image > img {
+    max-width: 200px;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  .home-container .card .info .btn-separador {
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .home-container .card .info .btn-separador button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  
+  .home-container .card .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .home-container .card .social > ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+}

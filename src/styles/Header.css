@@ -1,0 +1,57 @@
+.Header{
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: solid 1px #333;
+}
+
+.Header img{
+    width: 3rem;
+    aspect-ratio: 1;
+}
+
+.Header nav{
+    display: flex;
+    align-items: center;
+}
+
+.Header ul{
+    display: flex;
+}
+
+.Header a{
+    display: flex;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition:  background-color .3s ease, transform .3s ease; 
+    color: #00a548;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.Header a:hover{
+    transform: scale(1.1);
+    color: #04D939;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    padding: 0.5rem 1rem;
+  }
+
+  .Header img {
+    width: 2.2rem;
+  }
+
+  .Header ul {
+    gap: 0.3rem;
+  }
+
+  .Header a {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

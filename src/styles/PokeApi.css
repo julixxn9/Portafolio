@@ -1,0 +1,35 @@
+/* .pokeapi-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pokeapi-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pokeapi-container input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.pokeapi-container button {
+  padding: 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pokeapi-container button:hover {
+  background-color: #2563eb;
+} */

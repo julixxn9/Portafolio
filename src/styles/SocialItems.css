@@ -1,0 +1,28 @@
+.container-items {
+  display: flex; 
+  gap: 1rem; /* separa los iconos */
+}
+
+.container-items a {
+  display: flex;
+  width: 2rem; /* tamaño fijo para iconos */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.container-items a:hover {
+  transform: scale(1.2) rotate(10deg);
+  filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.25));
+}
+
+.container-items a:active {
+  transform: scale(0.9) rotate(-5deg);
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
+}
+
+.container-items img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  pointer-events: none; /* para que el hover esté en el link */
+}

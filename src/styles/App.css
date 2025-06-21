@@ -1,0 +1,37 @@
+.Main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mostrar-vista {
+  animation: mostrar-vista 1s ease-in-out forwards;
+}
+
+@keyframes mostrar-vista {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.ocultar-vista {
+  animation: ocultar-vista 1s ease-in-out both;
+}
+
+@keyframes ocultar-vista {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+}
