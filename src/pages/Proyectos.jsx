@@ -8,17 +8,17 @@ function Proyectos() {
 
   const leftHandler = () => {
     if (view % datos.proyectos.length === 0 || view === 0) {
-      const mover = view + datos.proyectos.length * 14;
-      movRef.current.style.left = `${mover * -1}rem`;
+      const mover = view + datos.proyectos.length;
+      movRef.current.style.left = `${mover * -16}rem`;
     }
-    setView(view + 14);
+    setView(view + 1);
   };
 
   const rightHandler = () => {
     if (view % datos.proyectos.length === 0) {
-      movRef.current.style.left = `${view * -1}rem`;
+      movRef.current.style.left = `${view * -16}rem`;
     }
-    setView(view - 14);
+    setView(view - 1);
   };
 
   return (
@@ -29,8 +29,8 @@ function Proyectos() {
           ref={movRef}
           className="move-container"
           style={{
-            transform: `translateX(${view}rem)`,
-            width: `${(datos.proyectos.length + 3) * 14}rem`,
+            transform: `translateX(${view * 16}rem)`,
+            width: `${(datos.proyectos.length + 3) * 16}rem`,
             left: "0rem",
           }}
         >

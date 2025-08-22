@@ -109,9 +109,16 @@ export const datos = {
     {
       nombre: "Trello clone",
       imagen: "/Portafolio/imagenes/Trello.png",
-      descripcion: "Juego de adivinanza de palabras con sistema de puntuación y límite de intentos.",
+      descripcion: "Clon de la herramienta de trabajo Trello que permite crear tarjetas y listas con funcionalidades.",
       enlaceWeb: "https://julixxn9.github.io/AHORACADO-GAME-/",
       enlaceRepo: "https://github.com/julixxn9/AHORACADO-GAME-"
+    },
+    {
+      nombre: "TaskList",
+      imagen: "/Portafolio/imagenes/TaskList.png",
+      descripcion: "Aplicación web para la gestión de tareas con funcionalidades de creación, edición y eliminación de tareas.",
+      enlaceWeb: "https://julixxn9.github.io/TaskList-frontend/",
+      enlaceRepo: "https://github.com/julixxn9/TaskList-frontend/tree/main"
     }
   ]
 };
